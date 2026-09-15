@@ -10,13 +10,12 @@ import java.util.List;
 @RequestMapping("/api/v1/reports")
 public class CurrencyReportController {
 
-    private final CurrencyReportService currencyReportService; // Siguraduhing lowercase 'e'
-
+    private final CurrencyReportService currencyReportService;
     public CurrencyReportController(CurrencyReportService currencyReportService) {
         this.currencyReportService = currencyReportService;
     }
 
-    @PostMapping("/publish")
+    @RequestMapping("/publish")
     public ResponseEntity<PublishReportResponse> publishReport(@RequestBody(required = false) PublishReportRequest request) {
         String baseCurrency = (request != null && request.baseCurrency() != null) ? request.baseCurrency() : "PHP";
         List<String> targets = (request != null && request.targetCurrencies() != null && !request.targetCurrencies().isEmpty())
