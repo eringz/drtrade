@@ -35,7 +35,7 @@ public class CurrencyReportService {
 
         String formattedMessage = formatReportPost(report);
 
-        System.out.println("\n------------------------- DR Trade Soft Launch---------------------- ");
+        System.out.println("\n------------------------- DR Trade Soft Launch ---------------------- ");
         System.out.println(formattedMessage);
         System.out.println("----------------------------------------------------------------------\n");
 
@@ -80,8 +80,8 @@ public class CurrencyReportService {
     private List<ExchangeRate>  fetchLiveRatesfromFrankfurter(String baseCurrency, List<String> targetCurrencies) {
         System.out.println("Base Currency:" + baseCurrency);
 
-//        String url = "https://api.frankfurter.dev/v1/latest?from=" + baseCurrency;
-        String url = "https://api.frankfurter.dev/v1/latest?from=PHP";
+        String url = "https://api.frankfurter.dev/v1/latest?from=" + baseCurrency;
+//        String url = "https://api.frankfurter.dev/v1/latest?from=PHP";
 
         List <ExchangeRate> ratesList = new ArrayList<>();
 
