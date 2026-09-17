@@ -1,4 +1,4 @@
-package com.drtrade.presentation;
+package com.drtrade.presentation.controller;
 
 import com.drtrade.application.CurrencyReportService;
 import org.springframework.http.ResponseEntity;
