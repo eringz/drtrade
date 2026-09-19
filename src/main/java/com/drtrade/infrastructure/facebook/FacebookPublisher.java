@@ -29,7 +29,7 @@ public class FacebookPublisher {
 
     public String publishToPage(String message) {
 //        String url = String.format("https://graph.facebook.com/v19.0/me/feed");
-        String url = "https://graph.facebook.com/v19.0/me/feed";
+        String url = "https://graph.facebook.com/v26.0/me/feed";
 
         System.out.println("URL :" + url);
         System.out.println("page id: " + pageId);
